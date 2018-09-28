@@ -1,0 +1,41 @@
+{
+  "name": "multi-expose-loader",
+  "version": "1.0.0-beta.0",
+  "description": "loader for exposing multiple exported members for webpack",
+  "license": "MIT",
+  "author": "Leonhard Zech @weitblickendes",
+  "homepage": "https://github.com/weitblicken/multi-expose-loader",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wetiblicken/multi-expose-loader.git"
+  },
+  "bugs": "https://github.com/weitblicken/multi-expose-loader/issues",
+  "bin": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 6.11.0 <7.0.0 || >= 8.10.0"
+  },
+  "scripts": {
+    "release": "standard-version"
+  },
+  "peerDependencies": {
+    "webpack": "^2.0.0 || ^3.0.0 || ^4.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^1.14.3",
+    "standard-version": "^4.2.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "keywords": [
+    "webpack",
+    "webpack-loader",
+    "expose-loader",
+    "multi-expose-loader"
+  ]
+}
