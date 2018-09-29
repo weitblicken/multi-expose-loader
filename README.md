@@ -78,6 +78,27 @@ import  'multi-expose-loader?$,jQuery!jquery';
 require('multi-expose-loader?#namespace1.member1,alias2:#member2!./example.js');
 ```
 
+### Code generation
+
+Unlike the expose-loader, only one webpack module is generated. For example, it looks like this:
+```javascript
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {
+
+var __multi_expose_loader_exports = __webpack_require__(64);
+global["alias1"] = __multi_expose_loader_exports.member1;
+if (!global["namespace2"]) global["namespace2"] = {};
+global["namespace2"]["alias2"] = __multi_expose_loader_exports.member2;
+globalmodule.exports = global["global1"] = global["global2"] = __multi_expose_loader_exports;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }) 
+```
+
+
 ## License
 
 MIT (http://www.opensource.org/licenses/mit-license.php)
