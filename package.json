@@ -15,17 +15,14 @@
   "engines": {
     "node": ">= 6.11.0 <7.0.0 || >= 8.10.0"
   },
-  "scripts": {
-    "release": "standard-version"
-  },
+  "scripts": {},
   "peerDependencies": {
     "webpack": "^2.0.0 || ^3.0.0"
   },
   "dependencies": {},
   "devDependencies": {
     "eslint-config-prettier": "^3.1.0",
-    "prettier": "^1.14.3",
-    "standard-version": "^4.2.0"
+    "prettier": "^1.14.3"
   },
   "licenses": [
     {

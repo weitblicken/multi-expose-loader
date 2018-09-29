@@ -98,6 +98,10 @@ globalmodule.exports = global["global1"] = global["global2"] = __multi_expose_lo
 /***/ }) 
 ```
 
+### Peer dependencies
+
+The peer dependencies are webpack 2 and 3. I think it also works in 4, but without testing I added this webpack version
+not to the peers. 
 
 ## License
 
