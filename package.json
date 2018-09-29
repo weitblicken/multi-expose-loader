@@ -1,6 +1,6 @@
 {
   "name": "multi-expose-loader",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0",
   "description": "loader for exposing multiple exported members for webpack",
   "license": "MIT",
   "author": "Leonhard Zech @weitblickendes",
@@ -19,10 +19,11 @@
     "release": "standard-version"
   },
   "peerDependencies": {
-    "webpack": "^2.0.0 || ^3.0.0 || ^4.0.0"
+    "webpack": "^2.0.0 || ^3.0.0"
   },
   "dependencies": {},
   "devDependencies": {
+    "eslint-config-prettier": "^3.1.0",
     "prettier": "^1.14.3",
     "standard-version": "^4.2.0"
   },
@@ -37,5 +38,24 @@
     "webpack-loader",
     "expose-loader",
     "multi-expose-loader"
-  ]
+  ],
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-console": "error",
+      "no-var": "error",
+      "no-alert": "error"
+    }
+  }
 }
