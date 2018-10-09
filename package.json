@@ -1,6 +1,6 @@
 {
   "name": "multi-expose-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "loader for exposing multiple exported members for webpack",
   "license": "MIT",
   "author": "Leonhard Zech @weitblickendes",
