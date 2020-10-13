@@ -101,8 +101,8 @@ function resultString(queryValue, requestExpr) {
 /**
  * The exports pitch for the webpack loader
  */
-module.exports = function() {};
-module.exports.pitch = function(remainingRequest) {
+module.exports = function () {};
+module.exports.pitch = function (remainingRequest) {
   // Change the request from an /abolute/path.js to a relative ./path.js
   // This prevents [chunkhash] values from changing when running webpack
   // builds in different directories.
