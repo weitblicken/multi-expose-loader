@@ -1,16 +1,28 @@
 {
   "name": "multi-expose-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "loader for exposing multiple exported members for webpack",
-  "license": "MIT",
-  "author": "Leonhard Zech @weitblickendes",
+  "keywords": [
+    "webpack",
+    "webpack-loader",
+    "expose-loader",
+    "multi-expose-loader"
+  ],
   "homepage": "https://github.com/weitblicken/multi-expose-loader",
   "repository": {
     "type": "git",
     "url": "https://github.com/weitblicken/multi-expose-loader.git"
   },
-  "bugs": "https://github.com/weitblicken/multi-expose-loader/issues",
-  "bin": "",
+  "bugs": {
+    "url": "https://github.com/weitblicken/multi-expose-loader/issues",
+    "email": "multi-expose-loader@cult-of-the-dead-code.de"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Leonhard Zech",
+    "email": "weitblicken@cult-of-the-dead-code.de",
+    "url": "https://cult-of-the-dead-code.de"
+  },
   "main": "index.js",
   "engines": {
     "node": ">= 6.11.0 <7.0.0 || >= 8.10.0"
@@ -21,21 +33,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "eslint-config-prettier": "^3.1.0",
-    "prettier": "^1.14.3"
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.12.0",
+    "prettier": "^2.1.2"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/mit-license.php"
-    }
-  ],
-  "keywords": [
-    "webpack",
-    "webpack-loader",
-    "expose-loader",
-    "multi-expose-loader"
-  ],
   "eslintConfig": {
     "extends": [
       "eslint:recommended",
